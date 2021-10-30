@@ -82,7 +82,7 @@ after auto converting, the converted value will automatically copy. No need to c
 		var outputCopy = document.getElementById('anjon')
 		function convertFunction(){			
 			textarea.style.textTransform = 'lowercase';	
-			textarea.value = textarea.value.replace(/(<([^>]+)>)|\t/gi,'').replace(/\ |\%|\/|\:|\,|\"|\'|\_|\n/gi,'-').replace(/\-?\-+/gi,'-').replace(/^\-|\-$/gi,'');
+			textarea.value = textarea.value.replace(/(<([^>]+)>)|\t/gi,'').replace(/\ |\%|\/|\:|\,|\"|\'|\?|\_|\n/gi,'-').replace(/\-?\-+/gi,'-').replace(/^\-|\-$/gi,'');
 
 			outputCopy.value = textarea.value;
 			outputCopy.style.textTransform = 'lowercase';
